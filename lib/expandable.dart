@@ -544,9 +544,8 @@ class ExpandablePanel extends StatelessWidget {
             widget: header, wrap: theme.tapHeaderToExpand!);
       } else {
         final rowChildren = <Widget>[
-          Expanded(
-            child: header ?? Container(),
-          ),
+          header ?? Container(),
+
           // ignore: deprecated_member_use_from_same_package
           wrapWithExpandableButton(
               widget: ExpandableIcon(theme: theme),
